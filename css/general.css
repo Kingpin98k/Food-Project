@@ -107,7 +107,7 @@ body{
 
     /*Property to add animation to color changing*/
     /*We always put the transition on original class/state*/
-    transition: background-color 1s; /*(property-we-need-to-change , time)*/
+    transition: all 1s; /*(property-we-need-to-change , time)*/
 }
 
 .btn--full:link,.btn--full:visited{
@@ -167,6 +167,35 @@ body{
 
 .grid-center-vertically{
     align-items: center;
+}
+
+strong{
+    font-weight: 600;
+}
+
+.link:link,
+.link:visited{
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    display: inline-block;
+    padding-bottom: 2px;
+    transition:  all 0.3s;
+}
+
+.link:hover,
+.link:active{
+    color: #cf711f;
+    border-bottom: 1px solid transparent; 
+}
+
+
+.margin-bottom-md{
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text{
+    text-align: center;
 }
 /*----------------------------------*/
 
