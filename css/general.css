@@ -54,6 +54,10 @@ html{
     font-size: 62.5%;  /*(10px / 16px)*/
     /*Percentage of users browser font size setting*/
     /*Now the user's font size is respected as well as the default font sizing*/
+    overflow-x: hidden;
+
+    /*Does not works in safari which is the default browser of */
+    scroll-behavior: smooth;
 }
 
 
@@ -62,6 +66,8 @@ body{
     line-height: 1;
     font-weight: 400;
     color: #555;
+    /*Only works if there is nothing absolutely positioned relative to body*/
+    overflow-x: hidden;
 }
 
 
@@ -241,6 +247,7 @@ strong{
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    line-height: 1.2;
 }
 
 .list-icon{
